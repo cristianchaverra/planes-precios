@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #1e293b;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+.tarjetas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+@media (min-width: 600px) {
+    .tarjetas {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (min-width: 1000px) {
+    .tarjetas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.tarjeta {
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.tarjeta:hover {
+    transform: translateY(-4px);
+}
+.destacada {
+    border: 2px solid #2563eb;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.destacada:hover {
+    transform: translateY(-4px);
+}
+h2 {
+    color: #1e293b;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+}
+.precio {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+li {
+    margin-bottom: 10px; 
+}
+button {
+    background-color: #1e293b;
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #334155;
+}
